@@ -130,6 +130,7 @@ body {
 
 .header {
   margin-top: 45px;
+  margin-bottom: 330px;
 }
 
 .header-nav {
@@ -183,7 +184,7 @@ body {
 .header_text {
   font-weight: 400;
   font-size: 21px;
-  color: #aaaaaa;
+  color: #bdbdbd;
   margin-bottom: 47px;
 }
 
@@ -206,7 +207,7 @@ body {
 
 .img-right,
 .img-left {
-  position: fixed;
+  position: absolute;
   top: 65px;
 }
 
@@ -228,7 +229,6 @@ body {
     top: -610px;
     left: 0;
     z-index: -1;
-    opacity: 0.4;
     -webkit-transform: rotate(270deg);
             transform: rotate(270deg);
     -webkit-box-pack: center;
@@ -238,8 +238,14 @@ body {
   .img-right {
     display: none;
   }
+  .about-me {
+    margin-top: -800px;
+  }
 }
 @media (max-width: 780px) {
+  .about-me {
+    margin-top: -750px;
+  }
   .header {
     margin-top: 30px;
   }
@@ -264,7 +270,7 @@ body {
   .header_text {
     font-weight: 400;
     font-size: 20px;
-    color: #aaaaaa;
+    color: #b6b6b6;
     margin-bottom: 30px;
     width: 350px;
     text-align: center;
@@ -290,20 +296,23 @@ body {
   }
 }
 @media (max-width: 600px) {
+  .about-me {
+    margin-top: -580px;
+  }
   .header-nav {
-    margin-bottom: 42px;
+    margin-bottom: 120px;
   }
   .menu {
     width: 35px;
   }
   .header_title {
-    font-size: 52px;
+    font-size: 54px;
     line-height: 45px;
-    margin-bottom: 18px;
+    margin-bottom: 35px;
   }
   .header_text {
-    font-size: 22px;
-    margin-bottom: 28px;
+    font-size: 24px;
+    margin-bottom: 35px;
     width: 291px;
     text-align: center;
   }
@@ -320,52 +329,221 @@ body {
     font-size: 24px;
   }
   .img-left {
-    top: -355px;
+    top: -400px;
     width: 300px;
   }
 }
 @media (max-width: 480px) {
-  .header {
-    margin-top: 28px;
+  .about-me {
+    margin-top: -550px;
   }
   .menu {
     width: 30px;
   }
   .header-nav {
-    margin-bottom: 42px;
+    margin-bottom: 120px;
   }
   .header_title {
-    font-size: 42px;
-    max-width: 143px;
-    line-height: 40px;
-    margin-bottom: 15px;
+    font-size: 54px;
+    max-width: 253px;
+    line-height: 54px;
+    margin-bottom: 25px;
   }
   .header_text {
-    font-size: 20px;
-    margin-bottom: 20px;
-    width: 231px;
+    font-size: 24px;
+    margin-bottom: 25px;
+    width: 281px;
     text-align: center;
   }
   .header-btn {
     -webkit-box-shadow: 0px 0px 5px 0px #ffffff;
             box-shadow: 0px 0px 5px 0px #ffffff;
-    padding: 7px 31px;
+    padding: 8px 32px;
   }
   .header-btn:hover, .header-btn:active {
     -webkit-box-shadow: 0px 0px 10px 0px #ffffff;
             box-shadow: 0px 0px 10px 0px #ffffff;
   }
   .header-btn a {
-    font-size: 20px;
+    font-size: 24px;
   }
   .img-left {
-    top: -295px;
+    top: -385px;
     width: 250px;
   }
 }
 @media (max-width: 380px) {
   .img-left {
-    top: -260px;
+    top: -350px;
     width: 200px;
+  }
+}
+.about-me {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 326px;
+}
+
+.about-me__title {
+  font-size: 64px;
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: 51px;
+  padding-top: 55px;
+  border-bottom: 1px solid #ffffff;
+}
+
+.about-me__subtitle {
+  font-weight: 400;
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 58px;
+}
+
+.about-me__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  row-gap: 10px;
+  padding-bottom: 105px;
+}
+.about-me__text p {
+  max-width: 810px;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 400;
+}
+
+.about-me__img {
+  position: absolute;
+  top: 830px;
+  opacity: 0.8;
+  z-index: -1;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+}
+
+@media (max-width: 920px) {
+  .about-me__img {
+    width: 520px;
+  }
+}
+@media (max-width: 780px) {
+  .about-me {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 326px;
+  }
+  .about-me__title {
+    font-size: 44px;
+    margin-bottom: 30px;
+  }
+  .about-me__subtitle {
+    font-size: 26px;
+    max-width: 550px;
+    margin-bottom: 45px;
+  }
+  .about-me__text {
+    row-gap: 10px;
+    padding-bottom: 75px;
+  }
+  .about-me__text p {
+    max-width: 450px;
+    text-align: center;
+    font-size: 20px;
+  }
+  .about-me__img {
+    top: 590px;
+  }
+}
+@media (max-width: 600px) {
+  .about-me {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 326px;
+  }
+  .about-me__title {
+    font-size: 36px;
+    padding-top: 35px;
+    margin-bottom: 25px;
+  }
+  .about-me__subtitle {
+    font-size: 24px;
+    max-width: 450px;
+    margin-bottom: 30px;
+  }
+  .about-me__text {
+    row-gap: 12px;
+  }
+  .about-me__text p {
+    max-width: 400px;
+    font-size: 20px;
+  }
+  .about-me__img {
+    top: 550px;
+  }
+}
+@media (max-width: 480px) {
+  .about-me {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 316px;
+  }
+  .about-me__title {
+    font-size: 34px;
+    margin-bottom: 25px;
+    padding-top: 25px;
+  }
+  .about-me__subtitle {
+    font-size: 24px;
+    max-width: 330px;
+    margin-bottom: 30px;
+  }
+  .about-me__text {
+    row-gap: 12px;
+  }
+  .about-me__text p {
+    max-width: 400px;
+    font-size: 18px;
+  }
+  .about-me__img {
+    top: 520px;
+    width: 400px;
   }
 }
