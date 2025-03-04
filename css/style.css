@@ -149,11 +149,17 @@ body {
 .header-nav__link {
   font-size: 24px;
   font-weight: 300;
-  color: #ffffff;
+  color: #b6b6b6;
   font-family: "Oswald", serif;
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
 }
 .header-nav__link.active {
+  color: #ffffff;
   border-bottom: 1px solid #ffffff;
+}
+.header-nav__link:hover {
+  color: #ffffff;
 }
 
 .header-main-content {
@@ -382,19 +388,25 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 326px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 275px;
 }
 
 .about-me__title {
+  margin: 0 auto;
   font-size: 64px;
   font-weight: 800;
   text-align: center;
+  width: 260px;
   margin-bottom: 51px;
   padding-top: 55px;
   border-bottom: 1px solid #ffffff;
@@ -442,6 +454,9 @@ body {
   .about-me__img {
     width: 520px;
   }
+  .about-me {
+    margin-bottom: 120px;
+  }
 }
 @media (max-width: 780px) {
   .about-me {
@@ -459,6 +474,7 @@ body {
   .about-me__title {
     font-size: 44px;
     margin-bottom: 30px;
+    width: 170px;
   }
   .about-me__subtitle {
     font-size: 26px;
@@ -476,6 +492,9 @@ body {
   }
   .about-me__img {
     top: 590px;
+  }
+  .about-me {
+    margin-bottom: 120px;
   }
 }
 @media (max-width: 600px) {
@@ -495,6 +514,7 @@ body {
     font-size: 36px;
     padding-top: 35px;
     margin-bottom: 25px;
+    width: 140px;
   }
   .about-me__subtitle {
     font-size: 24px;
@@ -510,6 +530,9 @@ body {
   }
   .about-me__img {
     top: 550px;
+  }
+  .about-me {
+    margin-bottom: 110px;
   }
 }
 @media (max-width: 480px) {
@@ -543,7 +566,215 @@ body {
     font-size: 18px;
   }
   .about-me__img {
-    top: 520px;
-    width: 400px;
+    top: 510px;
+    width: 380px;
+  }
+  .about-me {
+    margin-bottom: 50px;
+  }
+}
+.services {
+  margin-bottom: 396px;
+}
+
+.services__title {
+  margin: 0 auto;
+  font-weight: 800;
+  font-size: 64px;
+  margin-bottom: 130px;
+  text-align: center;
+  max-width: 500px;
+  border-bottom: 1px solid #ffffff;
+}
+
+.cards-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-column-gap: 78px;
+     -moz-column-gap: 78px;
+          column-gap: 78px;
+  margin-bottom: 82px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  row-gap: 80px;
+}
+
+.cards-row__el {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 417px;
+}
+
+.row__title {
+  font-size: 36px;
+  font-weight: 800;
+  margin-top: 12px;
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+.services-cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.row__text {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 300;
+}
+
+.services-btn {
+  padding: 14px 79px;
+  background-color: #ffffff;
+  border-radius: 20px;
+}
+.services-btn a {
+  font-size: 32px;
+  color: #000000;
+}
+.services-btn:hover, .services-btn:active {
+  -webkit-box-shadow: 0px 0px 10px 0px #ffffff;
+          box-shadow: 0px 0px 10px 0px #ffffff;
+}
+
+@media (max-width: 780px) {
+  .services {
+    margin-bottom: 165px;
+  }
+  .row__img {
+    width: 60px;
+  }
+  .services__title {
+    font-size: 44px;
+    margin-bottom: 80px;
+    width: 300px;
+  }
+  .cards-row {
+    margin-bottom: 82px;
+  }
+  .cards-row__el {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 350px;
+  }
+  .row__title {
+    font-size: 26px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+  }
+  .row__text {
+    font-size: 20px;
+  }
+  .services-btn {
+    padding: 14px 79px;
+  }
+  .services-btn a {
+    font-size: 26px;
+  }
+}
+@media (max-width: 600px) {
+  .services {
+    margin-bottom: 165px;
+  }
+  .row__img {
+    width: 50px;
+  }
+  .services__title {
+    font-size: 36px;
+    margin-bottom: 60px;
+    width: 245px;
+  }
+  .cards-row {
+    margin-bottom: 62px;
+  }
+  .cards-row__el {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 350px;
+  }
+  .row__title {
+    font-size: 24px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .row__text {
+    font-size: 20px;
+  }
+  .services-btn {
+    padding: 12px 65px;
+  }
+  .services-btn a {
+    font-size: 24px;
+  }
+}
+@media (max-width: 480px) {
+  .services {
+    margin-bottom: 165px;
+  }
+  .row__img {
+    width: 45px;
+  }
+  .services__title {
+    font-size: 34px;
+    margin-bottom: 35px;
+    width: 235px;
+  }
+  .cards-row {
+    margin-bottom: 60px;
+    row-gap: 50px;
+  }
+  .cards-row__el {
+    width: 300px;
+  }
+  .row__title {
+    font-size: 24px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+  }
+  .row__text {
+    font-size: 18px;
+  }
+  .services-btn {
+    padding: 10px 50px;
+  }
+  .services-btn a {
+    font-size: 22px;
   }
 }
