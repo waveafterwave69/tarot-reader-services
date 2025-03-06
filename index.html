@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
     <!-- <link rel="icon" href="./img/icon-2.png"> -->
+    <link rel="stylesheet" href="./css/swiper-bundle.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -18,15 +19,24 @@
 </head>
 
 <body>
+    <div class="burger-list hidden">
+        <a href="./index.html" class="burger__link">Главная</a>
+        <a href="./html/price.html" class="burger__link">Прайс-Лист</a>
+        <a href="./html/matrix.html" class="burger__link">Матрица Судьбы</a>
+        <a href="https://t.me/catarogin" target="_blank" class="burger__link"><img src="./img/tg.png" alt=""
+                class="tg"></a>
+    </div>
+    <div class="overlay hidden"></div>
     <header class="header">
         <div class="container">
             <ul class="header-nav" data-aos="fade-down" data-aos-duration="550">
-                <li><a href="#" class="header-nav__link active">Главная</a></li>
-                <li><a href="#" class="header-nav__link">Прайс-Лист</a></li>
-                <li><a href="#" class="header-nav__link">Отзывы</a></li>
-                <div class="menu hidden"><img src="./img/menu.png" alt=""></div>
+                <li><a href="../index.html" class="header-nav__link active">Главная</a></li>
+                <li><a href="./html/price.html" class="header-nav__link">Прайс-Лист</a></li>
+                <li><a href="./html/matrix.html" class="header-nav__link">Матрица Судьбы</a></li>
             </ul>
-
+            <button class="burger-menu">
+                <img src="./img/menu.png" alt="" class="burger-menu__img">
+            </button>
             <div class="header-main-content">
                 <h1 class="header_title">Услуги Таролога</h1>
                 <div class="header_text">
@@ -38,8 +48,8 @@
             </div>
         </div>
     </header>
-    <img src="./img/death.png" alt="" class="about-me__img">
-    <section class="about-me" data-aos="fade-up" data-aos-duration="550">
+    <section class="about-me">
+        <img src="./img/death.png" alt="" class="about-me__img">
         <div class="container">
             <h2 class="about-me__title">Обо мне</h2>
             <h3 class="about-me__subtitle">Меня зовут Соня, и я рада видеть
@@ -94,7 +104,18 @@
                 <div class="reviews-row">
                     <div class="reviews-row-content">
                         <button class="reviews__btn-left"><img src="./img/reviews-left.png" alt=""></button>
-                        <img src="./img/reviews-1.png" alt="" class="reviews-img">
+                        <div class="swiper">
+                            <div class="swiper-wrapper">
+                                <!-- Slides -->
+                                <div class="swiper-slide"><img src="./img/reviews-1.png" alt="" class="reviews-img">
+                                </div>
+                                <div class="swiper-slide"><img src="./img/rev-2.png" alt="" class="reviews-img"></div>
+                                <div class="swiper-slide"><img src="./img/rev-3.png" alt="" class="reviews-img"></div>
+                                <div class="swiper-slide"><img src="./img/rev-4.png" alt="" class="reviews-img"></div>
+                                <div class="swiper-slide"><img src="./img/rev-6.png" alt="" class="reviews-img"></div>
+                                <div class="swiper-slide"><img src="./img/rev-7.png" alt="" class="reviews-img"></div>
+                            </div>
+                        </div>
                         <button class="reviews__btn-right"><img src="./img/reviews-right.png" alt=""></button>
                     </div>
                     <div class="row">
@@ -126,13 +147,9 @@
             </div>
         </div>
     </footer>
-    <script src="./js/main.js"></script>
+    <script src="./js/swiper-bundle.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init({
-            once: true,
-        });
-    </script>
+    <script src="./js/main.js"></script>
 </body>
 
 </html>

@@ -845,7 +845,8 @@ body {
   width: 60px;
 }
 
-.reviews-img {
+.reviews-img,
+.swiper {
   width: 600px;
 }
 
@@ -863,6 +864,12 @@ body {
 .reviews__btn-right-mobile,
 .reviews__btn-left-mobile {
   width: 35px;
+}
+
+.reviews-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @media (max-width: 1245px) {
@@ -888,7 +895,8 @@ body {
   .reviews__btn-right {
     width: 55px;
   }
-  .reviews-img {
+  .reviews-img,
+  .swiper {
     width: 700px;
   }
 }
@@ -915,7 +923,8 @@ body {
   .reviews__btn-right {
     width: 50px;
   }
-  .reviews-img {
+  .reviews-img,
+  .swiper {
     width: 500px;
   }
 }
@@ -933,7 +942,8 @@ body {
   .reviews__btn-right {
     width: 45px;
   }
-  .reviews-img {
+  .reviews-img,
+  .swiper {
     width: 400px;
   }
   .reviews-title {
@@ -962,7 +972,8 @@ body {
   .reviews__btn-right {
     width: 30px;
   }
-  .reviews-img {
+  .reviews-img,
+  .swiper {
     width: 310px;
   }
   .reviews-title {
@@ -987,11 +998,8 @@ body {
        -moz-column-gap: 15px;
             column-gap: 15px;
   }
-  .reviews__btn-left,
-  .reviews__btn-right {
-    display: none;
-  }
-  .reviews-img {
+  .reviews-img,
+  .swiper {
     width: 310px;
   }
   .reviews-title {
@@ -1005,6 +1013,13 @@ body {
   .reviews {
     margin-bottom: 300px;
   }
+  .reviews {
+    margin-bottom: 200px;
+  }
+  .reviews__btn-left,
+  .reviews__btn-right {
+    display: none;
+  }
   .row {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1012,9 +1027,6 @@ body {
     -webkit-column-gap: 85px;
        -moz-column-gap: 85px;
             column-gap: 85px;
-  }
-  .reviews {
-    margin-bottom: 200px;
   }
 }
 .footer {
@@ -1121,4 +1133,71 @@ body {
   .footer-text p {
     font-size: 20px;
   }
+}
+.burger-menu {
+  display: none;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  right: 30px;
+  top: 30px;
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+.burger-list {
+  font-family: "Oswald", serif;
+  padding: 0 0 0 30px;
+  padding-top: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 1;
+  height: 100vh;
+  width: 50%;
+  row-gap: 15px;
+  background-color: #000000;
+}
+.burger-list a {
+  color: #ffffff;
+}
+@media (max-width: 450px) {
+  .burger-list {
+    width: 65%;
+    font-size: 22px;
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+.tg {
+  width: 30px;
+}
+
+@media (max-width: 780px) {
+  .burger-menu {
+    display: block;
+    z-index: 3;
+  }
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 150%;
+  background-color: rgba(0, 0, 0, 0.4);
+  -webkit-backdrop-filter: blur(3px);
+          backdrop-filter: blur(3px);
 }
