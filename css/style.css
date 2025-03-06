@@ -1164,7 +1164,7 @@ body {
   z-index: 1;
   height: 100vh;
   width: 50%;
-  row-gap: 15px;
+  row-gap: 25px;
   background-color: #000000;
 }
 .burger-list a {
