@@ -405,7 +405,7 @@ body {
   position: fixed;
   right: 0;
   top: 0;
-  z-index: 1;
+  z-index: 3;
   height: 100vh;
   width: 50%;
   row-gap: 15px;
@@ -417,7 +417,7 @@ body {
 @media (max-width: 450px) {
   .burger-list {
     width: 65%;
-    font-size: 22px;
+    font-size: 20px;
   }
 }
 
@@ -444,6 +444,7 @@ body {
   background-color: rgba(0, 0, 0, 0.4);
   -webkit-backdrop-filter: blur(3px);
           backdrop-filter: blur(3px);
+  z-index: 1;
 }
 
 .matrix-title {
@@ -476,6 +477,28 @@ body {
   right: 550px;
 }
 
+.matrix-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 auto;
+  margin-top: 50px;
+  padding: 14px 79px;
+  background-color: #ffffff;
+  border-radius: 20px;
+}
+.matrix-btn a {
+  font-size: 32px;
+  color: #000000;
+}
+.matrix-btn:hover, .matrix-btn:active {
+  -webkit-box-shadow: 0px 0px 10px 0px #ffffff;
+          box-shadow: 0px 0px 10px 0px #ffffff;
+}
+
 @media (max-width: 1700px) {
   .matrix-img-1 {
     top: 150px;
@@ -499,6 +522,12 @@ body {
   }
 }
 @media (max-width: 550px) {
+  .matrix-btn {
+    padding: 10px 30px;
+  }
+  .matrix-btn a {
+    font-size: 22px;
+  }
   .matrix-title {
     text-align: center;
     font-size: 40px;
