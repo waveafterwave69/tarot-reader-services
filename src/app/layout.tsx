@@ -39,7 +39,7 @@ export const metadata: Metadata = {
                 height: 600,
             },
             {
-                url: 'https://catarog.ru/favicon/favicon.svg', // Replace with a relevant image URLв
+                url: 'https://catarog.ru/favicon/favicon.svg', // Replace with a relevant image URL
                 width: 1800,
                 height: 1600,
                 alt: 'Catarog Logo',
