@@ -1,0 +1,25 @@
+.nav__item {
+    font-size: 24px;
+    color: #bdbdbd;
+    font-weight: 300;
+}
+
+.nav__item:hover {
+    color: var(--color-white);
+}
+
+.active {
+    color: var(--color-white);
+}
+
+@media (max-width: 768px) {
+    .nav__item {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 550px) {
+    .nav__item {
+        font-size: 19px;
+    }
+}

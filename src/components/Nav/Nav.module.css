@@ -1,0 +1,20 @@
+.nav {
+    font-family: var(--font-oswald);
+    font-weight: 300;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 35px;
+}
+
+@media (max-width: 768px) {
+    .nav {
+        column-gap: 25px;
+    }
+}
+
+@media (max-width: 550px) {
+    .nav {
+        column-gap: 15px;
+    }
+}

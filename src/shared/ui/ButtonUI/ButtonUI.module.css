@@ -1,0 +1,46 @@
+.button {
+    background-color: var(--color-white);
+    box-shadow: 0 0 5px 0 #fff;
+    background: #fff;
+    padding: 13px 70px;
+    font-weight: 600;
+    font-size: 32px;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.button a {
+    color: var(--color-black)
+}
+
+.button:hover {
+    scale: 1.02;
+    box-shadow: 0 0 10px 0 #fff;
+}
+
+@media (max-width: 1440px) {
+    .button {
+        box-shadow: 0 0 5px 0 #fff;
+        padding: 8px 50px;
+        font-weight: 600;
+        font-size: 26px;
+    }
+}
+
+@media (max-width: 768px) {
+    .button {
+        box-shadow: 0 0 5px 0 #fff;
+        padding: 8px 50px;
+        font-weight: 600;
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 550px) {
+    .button {
+        box-shadow: 0 0 5px 0 #fff;
+        padding: 8px 40px;
+        font-weight: 600;
+        font-size: 22px;
+    }
+}

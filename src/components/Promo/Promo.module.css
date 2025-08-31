@@ -1,0 +1,243 @@
+.promo {
+    margin-bottom: 400px;
+}
+
+.promo__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 130px;
+}
+
+.promo__img {
+    position: absolute;
+}
+
+.img__left {
+    left: 150px;
+    top: 110px;
+}
+
+.img__right {
+    right: 150px;
+    top: 110px;
+}
+
+.promo__tite {
+    font-weight: 800;
+    font-size: 120px;
+    width: 630px;
+    line-height: 90%;
+    text-align: center;
+    color: var(--color-white);
+    margin-bottom: 30px;
+}
+
+.promo__text {
+    font-weight: 400;
+    font-size: 21px;
+    text-align: center;
+    color: var(--color-gray);
+    margin-bottom: 50px;
+}
+
+.promo__button {
+    background-color: var(--color-white);
+    box-shadow: 0 0 5px 0 #fff;
+    background: #fff;
+    padding: 13px 70px;
+    font-weight: 600;
+    font-size: 32px;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.promo__button a {
+    color: var(--color-black)
+}
+
+.promo__button:hover {
+    scale: 1.02;
+    box-shadow: 0 0 10px 0 #fff;
+}
+
+@media (max-width: 1900px) {
+    .promo {
+        position: relative;
+    }
+
+    .img__left {
+        left: 0px;
+        top: -100px;
+    }
+
+    .img__right {
+        right: 0px;
+        top: -100px;
+        z-index: -1;
+    }
+
+    .promo__img {
+        z-index: -1;
+        width: 400px;
+    }
+}
+
+@media (max-width: 1440px) {
+    .promo {
+        position: relative;
+        margin-bottom: 250px;
+    }
+
+    .img__left {
+        left: 0px;
+        top: -100px;
+    }
+
+    .img__right {
+        right: 0px;
+        top: -100px;
+    }
+
+    .promo__img {
+        z-index: -1;
+        opacity: 0.3;
+        width: 300px;
+    }
+
+    .promo__content {
+        margin-top: 100px;
+    }
+
+    .promo__tite {
+        font-size: 92px;
+        width: 630px;
+        line-height: 80%;
+        margin-bottom: 30px;
+    }
+
+    .promo__text {
+        max-width: 400px;
+        font-size: 21px;
+        margin-bottom: 30px;
+    }
+
+    .promo__button {
+        box-shadow: 0 0 5px 0 #fff;
+        padding: 8px 50px;
+        font-weight: 600;
+        font-size: 26px;
+    }
+}
+
+@media (max-width: 768px) {
+    .promo {
+        margin-top: 80px;
+        position: relative;
+        margin-bottom: 200px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: -450px;
+    }
+
+    .img__left {
+        transform: rotate(270deg);
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        left: 0;
+        position: relative;
+        top: 420px;
+    }
+
+    .img__right {
+        display: none;
+    }
+
+    .promo__img {
+        z-index: -1;
+        opacity: 0.6;
+        width: 350px;
+    }
+
+    .promo__content {
+        margin-top: 50px;
+    }
+
+    .promo__tite {
+        font-size: 62px;
+        width: 430px;
+        line-height: 80%;
+        margin-bottom: 20px;
+    }
+
+    .promo__text {
+        max-width: 400px;
+        font-size: 20px;
+        margin-bottom: 25px;
+        max-width: 300px;
+    }
+
+    .promo__button {
+        box-shadow: 0 0 5px 0 #fff;
+        padding: 8px 50px;
+        font-weight: 600;
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 550px) {
+    .promo {
+        position: relative;
+        margin-bottom: 200px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: -260px;
+    }
+
+    .img__left {
+        transform: rotate(270deg);
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        left: 0;
+        position: relative;
+        top: 260px;
+    }
+
+    .promo__img {
+        z-index: -1;
+        opacity: 0.7;
+        width: 200px;
+    }
+
+    .promo__content {
+        margin-top: 50px;
+        max-width: 300px;
+    }
+
+    .promo__tite {
+        font-size: 64px;
+        max-width: 330px;
+        line-height: 80%;
+        margin-bottom: 20px;
+    }
+
+    .promo__text {
+        max-width: 250px;
+        font-size: 20px;
+        margin-bottom: 25px;
+    }
+
+    .promo__button {
+        box-shadow: 0 0 5px 0 #fff;
+        padding: 8px 40px;
+        font-weight: 600;
+        font-size: 22px;
+    }
+}

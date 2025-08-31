@@ -1,0 +1,12 @@
+:root {
+    --container-width: 1420px;
+    --container-padding-x: 24px;
+    --container-padding-mobile-x: 16px;
+
+    --color-white: #FFFFFF;
+    --color-black: #070707;
+    --color-black-2: #090909;
+    --color-gray: #b6b6b6;
+
+    --transition-duration: 0.2s;
+}
