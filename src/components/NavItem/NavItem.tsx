@@ -1,6 +1,5 @@
 import Link from 'next/link'
 import styles from './NavItem.module.css'
-import { pagesConfig } from '@/config/pages'
 import type { Menu } from '@/config/nav'
 
 interface NavItemProps {
