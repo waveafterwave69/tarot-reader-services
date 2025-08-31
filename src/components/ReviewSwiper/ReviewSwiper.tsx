@@ -3,7 +3,6 @@
 import { Reviews } from '@/data/reviewsData'
 import { Autoplay } from 'swiper/modules'
 import { Swiper, SwiperSlide } from 'swiper/react'
-// @ts-ignore
 import 'swiper/css'
 import SwiperItem from '../SwiperItem/SwiperItem'
 import styles from './ReviewSwiper.module.css'
