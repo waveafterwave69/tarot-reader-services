@@ -14,8 +14,8 @@ export const navConfig: Menu[] = [
         href: pagesConfig.price,
         name: 'Прайс-Лист',
     },
-    {
-        href: pagesConfig.matrix,
-        name: 'Матрица-Судьбы',
-    },
+    // {
+    //     href: pagesConfig.matrix,
+    //     name: 'Матрица-Судьбы',
+    // },
 ]
