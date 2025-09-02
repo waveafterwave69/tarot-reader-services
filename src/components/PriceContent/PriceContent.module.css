@@ -13,6 +13,7 @@
     background-color: var(--color-black-2);
     padding: 40px 50px;
     border-radius: 5px;
+    margin-bottom: 30px;
 }
 
 .price__list {
@@ -38,6 +39,10 @@
 }
 
 @media (max-width: 550px) {
+    .price {
+        margin-bottom: 80px;
+    }
+
     .price__title {
         margin-top: 20px;
         margin-bottom: 20px;
@@ -46,7 +51,7 @@
 
     .price__content {
         padding: 15px 25px;
-        margin-bottom: 80px;
+        margin-bottom: 20px;
     }
 
     .price__list {

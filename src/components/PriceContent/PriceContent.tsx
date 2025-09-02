@@ -1,6 +1,7 @@
 import { Prices } from '@/data/priceData'
 import styles from './PriceContent.module.css'
 import PriceCardItem from '../PriceCardItem/PriceCardItem'
+import ButtonUI from '@/shared/ui/ButtonUI/ButtonUI'
 
 const PriceContent: React.FC = () => {
     return (
@@ -19,6 +20,18 @@ const PriceContent: React.FC = () => {
                                 />
                             ))}
                         </ul>
+                    </div>
+                    <div
+                        style={{
+                            margin: '0 auto',
+                            display: 'flex',
+                            justifyContent: 'center',
+                        }}
+                    >
+                        <ButtonUI
+                            href="https://t.me/catarogin"
+                            text="Сделать заказ"
+                        />
                     </div>
                 </div>
             </section>
